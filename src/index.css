@@ -31,6 +31,7 @@ h1 {
 
 .input {
   margin: 40px 0;
+  padding: 0 20px;
 }
 
 .input input[type="search"] {
@@ -39,9 +40,18 @@ h1 {
   border: 0;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  font-size: 20px;
-  min-width: 500px;
   outline: none;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+@media (min-width: 700px) {
+  .input input[type="search"] {
+    font-size: 20px;
+    min-width: 500px;
+  }
 }
 
 
